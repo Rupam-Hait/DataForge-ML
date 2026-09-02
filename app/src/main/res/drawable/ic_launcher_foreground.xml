@@ -1,0 +1,48 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Neural connection lines -->
+    <path
+        android:strokeColor="#38BDF8"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:pathData="M36,36 L54,30 M36,36 L54,54 M36,54 L54,54 M36,72 L54,54 M36,72 L54,78 M54,30 L72,42 M54,54 L72,42 M54,54 L72,66 M54,78 L72,66" />
+
+    <!-- Input Nodes -->
+    <path
+        android:fillColor="#38BDF8"
+        android:pathData="M36,36m-6,0a6,6 0,1,1 12,0a6,6 0,1,1 -12,0" />
+    <path
+        android:fillColor="#38BDF8"
+        android:pathData="M36,54m-6,0a6,6 0,1,1 12,0a6,6 0,1,1 -12,0" />
+    <path
+        android:fillColor="#38BDF8"
+        android:pathData="M36,72m-6,0a6,6 0,1,1 12,0a6,6 0,1,1 -12,0" />
+
+    <!-- Hidden Layer Nodes -->
+    <path
+        android:fillColor="#818CF8"
+        android:pathData="M54,30m-6.5,0a6.5,6.5 0,1,1 13,0a6.5,6.5 0,1,1 -13,0" />
+    <path
+        android:fillColor="#A78BFA"
+        android:pathData="M54,54m-7,0a7,7 0,1,1 14,0a7,7 0,1,1 -14,0" />
+    <path
+        android:fillColor="#818CF8"
+        android:pathData="M54,78m-6.5,0a6.5,6.5 0,1,1 13,0a6.5,6.5 0,1,1 -13,0" />
+
+    <!-- Output Layer Nodes (Glowing White-Cyan) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M72,42m-6,0a6,6 0,1,1 12,0a6,6 0,1,1 -12,0" />
+    <path
+        android:fillColor="#22D3EE"
+        android:pathData="M72,66m-6,0a6,6 0,1,1 12,0a6,6 0,1,1 -12,0" />
+
+    <!-- Inner node cores -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,54m-3,0a3,3 0,1,1 6,0a3,3 0,1,1 -6,0" />
+</vector>
