@@ -1,0 +1,9 @@
+﻿services:
+  - type: web
+    name: dataforge-ml
+    env: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    region: oregon
+    healthCheckPath: /health
+    autoDeploy: true

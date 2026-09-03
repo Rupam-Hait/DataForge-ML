@@ -1,19 +1,21 @@
-# ⚡ DataForge ML — On-Device Machine Learning Studio & Dataset Synthesizer
+# ⚡ DataForge ML — On-Device & Cloud Machine Learning Studio
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Platform-Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" />
+  <img src="https://img.shields.io/badge/Platform-Android%20%7C%20Web%20%7C%20Docker-3DDC84?style=for-the-badge&logo=android&logoColor=white" />
+  <img src="https://img.shields.io/badge/FastAPI-Backend-009688?style=for-the-badge&logo=fastapi&logoColor=white" />
   <img src="https://img.shields.io/badge/Kotlin-2.0.21-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white" />
   <img src="https://img.shields.io/badge/Jetpack_Compose-Material3-4285F4?style=for-the-badge&logo=jetpackcompose&logoColor=white" />
   <img src="https://img.shields.io/badge/AI-Gemini_3.7_Flash-FF6F00?style=for-the-badge&logo=google&logoColor=white" />
   <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" />
 </p>
 
-**DataForge ML** is a full-fledged on-device Machine Learning Studio, Data Engineering Pipeline, and Dataset Hub built with Kotlin and Jetpack Compose. It empowers engineers, data scientists, and students to curate data, perform statistical Exploratory Data Analysis (EDA), preprocess & scale features, train machine learning algorithms locally with live loss/accuracy and 2D continuous decision boundary visualizers, test real-time interactive predictions, and export production-ready code for **PyTorch 2.x**, **TensorFlow / Keras**, **Scikit-Learn**, **FastAPI Server**, and **ONNX Runtime**.
+**DataForge ML** is a full-fledged multi-platform Machine Learning Studio, Data Engineering Pipeline, and Dataset Hub. It supports both **Native Android (Kotlin + Jetpack Compose)** and a **Production Fullstack Cloud Deployment (FastAPI + Modern Web Studio + Docker)**. It empowers engineers, data scientists, and students to curate data, perform statistical Exploratory Data Analysis (EDA), preprocess & scale features, train machine learning algorithms with live convergence graphs and 2D continuous decision boundary visualizers, test real-time predictions, and export production code for **PyTorch 2.x**, **TensorFlow / Keras**, **Scikit-Learn**, **FastAPI Server**, and **ONNX Runtime**.
 
 ---
 
 ## 📑 Table of Contents
-- [📱 How to Open & Run the App](#-how-to-open--run-the-app)
+- [🌐 Cloud & Fullstack Deployment (Frontend + Backend)](#-cloud--fullstack-deployment-frontend--backend)
+- [📱 Native Android App: How to Open & Run](#-native-android-app-how-to-open--run)
 - [🌟 Key Architecture & Capabilities](#-key-architecture--capabilities)
 - [🧠 Machine Learning Algorithms](#-machine-learning-algorithms)
 - [🛠️ Feature Engineering & Preprocessing](#️-feature-engineering--preprocessing)
@@ -24,7 +26,33 @@
 
 ---
 
-## 📱 How to Open & Run the App
+## 🌐 Cloud & Fullstack Deployment (Frontend + Backend)
+
+DataForge ML is packaged with a containerized **FastAPI Backend** and **Modern Web Frontend**.
+
+### 1. Run via Docker Compose (Recommended)
+Spin up both the web interface and machine learning backend in one command:
+```bash
+docker compose up --build
+```
+- **Web Studio & UI**: Open [http://localhost:8000](http://localhost:8000)
+- **Interactive Swagger API Docs**: Open [http://localhost:8000/docs](http://localhost:8000/docs)
+- **Health Check**: Open [http://localhost:8000/health](http://localhost:8000/health)
+
+### 2. Run Backend Locally with Python
+```bash
+cd backend
+pip install -r requirements.txt
+uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+```
+
+### 3. 1-Click Free Cloud Deployment (Render / Railway / HuggingFace)
+- **Render.com**: Connect this GitHub repo `https://github.com/Rupam-Hait/DataForge-ML`. The included `render.yaml` and `Dockerfile` will automatically deploy your free web service!
+- **Railway.app / Fly.io / Koyeb**: Select Dockerfile deployment on port `8000`.
+
+---
+
+## 📱 Native Android App: How to Open & Run
 
 DataForge ML is a native Android application built with modern Jetpack Compose. You can run and interact with it using any of the methods below:
 

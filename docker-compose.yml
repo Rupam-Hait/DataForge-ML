@@ -1,0 +1,14 @@
+﻿version: '3.8'
+
+services:
+  dataforge-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: dataforge-ml-studio
+    ports:
+      - "8000:8000"
+    environment:
+      - PORT=8000
+      - ENVIRONMENT=production
+    restart: unless-stopped
