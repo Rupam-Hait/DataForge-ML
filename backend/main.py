@@ -16,7 +16,10 @@ import uuid
 import math
 import os
 
-from datasets_store import PRELOADED_DATASETS, calculate_correlations_and_stats
+try:
+    from datasets_store import PRELOADED_DATASETS, calculate_correlations_and_stats
+except ImportError:
+    from backend.datasets_store import PRELOADED_DATASETS, calculate_correlations_and_stats
 
 from fastapi.staticfiles import StaticFiles
 
