@@ -26,29 +26,23 @@
 
 ---
 
-## 🌐 Cloud & Fullstack Deployment (Frontend + Backend)
+## 🌐 Live Public Access & Cloud Deployment
 
-DataForge ML is packaged with a containerized **FastAPI Backend** and **Modern Web Frontend**.
+DataForge ML is accessible online through multiple public endpoints:
 
-### 1. Run via Docker Compose (Recommended)
-Spin up both the web interface and machine learning backend in one command:
-```bash
-docker compose up --build
-```
-- **Web Studio & UI**: Open [http://localhost:8000](http://localhost:8000)
-- **Interactive Swagger API Docs**: Open [http://localhost:8000/docs](http://localhost:8000/docs)
-- **Health Check**: Open [http://localhost:8000/health](http://localhost:8000/health)
+### 🟢 1. Live Public Studio & API URL (Instant Public Web Access)
+- **Live Web Studio**: **[https://big-snails-stay.loca.lt](https://big-snails-stay.loca.lt)**
+  *(If prompted for tunnel password on first visit, enter your tunnel IP: `152.56.156.148` and click Submit)*
+- **Interactive Swagger API Docs**: **[https://big-snails-stay.loca.lt/docs](https://big-snails-stay.loca.lt/docs)**
+- **API Health Endpoint**: **[https://big-snails-stay.loca.lt/health](https://big-snails-stay.loca.lt/health)**
 
-### 2. Run Backend Locally with Python
-```bash
-cd backend
-pip install -r requirements.txt
-uvicorn main:app --host 0.0.0.0 --port 8000 --reload
-```
+### 🌐 2. GitHub Pages Deployment
+- **Web App URL**: **[https://rupam-hait.github.io/DataForge-ML/](https://rupam-hait.github.io/DataForge-ML/)**
+- Deployed automatically via [`.github/workflows/pages.yml`](.github/workflows/pages.yml).
 
-### 3. 1-Click Free Cloud Deployment (Render / Railway / HuggingFace)
-- **Render.com**: Connect this GitHub repo `https://github.com/Rupam-Hait/DataForge-ML`. The included `render.yaml` and `Dockerfile` will automatically deploy your free web service!
-- **Railway.app / Fly.io / Koyeb**: Select Dockerfile deployment on port `8000`.
+### 🚀 3. 1-Click Free Cloud Deployment (Render / Railway)
+- **Render**: Connect repository `https://github.com/Rupam-Hait/DataForge-ML`. It will automatically deploy using [`render.yaml`](render.yaml) and [`Dockerfile`](Dockerfile).
+- **Vercel**: Connect repository with [`vercel.json`](vercel.json) for instant global edge hosting.
 
 ---
 
